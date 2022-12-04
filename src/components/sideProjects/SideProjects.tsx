@@ -1,6 +1,7 @@
 import React from "react";
 import { Tab } from "@headlessui/react";
-export default function Skills() {
+
+export default function SideProjects() {
   function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
   }
@@ -13,10 +14,10 @@ export default function Skills() {
     >
       <ul>
         <li className="relative rounded-md p-3 hover:bg-gray-100">
-          <h3 className="text-sm font-medium leading-5">Title 2</h3>
+          <h3 className="text-sm font-medium leading-5">Title 3</h3>
 
           <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-500">
-            Body 2
+            Body 3
           </ul>
         </li>
       </ul>

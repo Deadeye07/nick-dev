@@ -4,7 +4,7 @@ import Home from "./components/home/home";
 
 function App() {
   return (
-    <div className="bg-white dark:bg-slate-800  h-screen">
+    <div className="h-screen">
       <Home></Home>
     </div>
   );
