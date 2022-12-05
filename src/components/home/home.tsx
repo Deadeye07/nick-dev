@@ -11,9 +11,6 @@ import SideProjects from "../sideProjects/SideProjects";
 
 export default function Home() {
   const [enabled, setEnabled] = useState(true);
-  function classNames(...classes) {
-    return classes.filter(Boolean).join(" ");
-  }
   return (
     <div className={`${enabled ? "dark" : ""} h-full`}>
       <div className="bg-white dark:bg-slate-800 dark:text-white h-full">
