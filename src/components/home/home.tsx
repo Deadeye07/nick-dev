@@ -3,10 +3,10 @@ import { Tab } from "@headlessui/react";
 import React from "react";
 import "./home.css";
 import ThemeToggle from "../themeToggle/ThemeToggle";
-import Side from "../profile/Side";
+import Side from "../profile/side";
 import TabList from "../tabList/TabList";
-import Experience from "../experience/Experience";
-import Skills from "../skills/Skills";
+import Experience from "../experience/experience";
+import Skills from "../skills/skills";
 import SideProjects from "../sideProjects/SideProjects";
 
 export default function Home() {

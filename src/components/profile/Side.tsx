@@ -1,6 +1,6 @@
 import React from "react";
 import { UserIcon } from "@heroicons/react/20/solid";
-import './Side.css'
+import './side.css'
 export default function Side() {
   return (
     <div
