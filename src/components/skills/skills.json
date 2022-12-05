@@ -1,0 +1,52 @@
+[
+    {
+        "id": "general",
+        "title":"General",
+        "items":[
+            "Leadership",
+            "Mentoring",
+            "Project Management",
+            "UX Design",
+            "Documentation",
+            "Diagramming",
+            "Agile Development"
+        ]
+    },
+    {
+        "id": "languages",
+        "title":"Lanaguages",
+        "items":[
+            "Javascript",
+            "Typescript",
+            "PHP",
+            "HTML",
+            "CSS"
+        ]
+    },
+    {
+        "id": "frameworks",
+        "title":"Frameworks and Libraries",
+        "items":[
+            "Angular",
+            "Sencha ExtJS",
+            "TailwindCSS",
+            "Material",
+            "Jasmine",
+            "Nest.js",
+            "Express.js"
+        ]
+    },
+    {
+        "id":"tools",
+        "title":"Tools",
+        "items":[
+            "GIT",
+            "Figma",
+            "Atlassian Suite",
+            "Slack",
+            "Sonarqube",
+            "Notion"
+        ]
+    }
+
+]
