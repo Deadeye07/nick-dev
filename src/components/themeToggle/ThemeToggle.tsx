@@ -2,7 +2,7 @@ import React from "react";
 import { Switch } from "@headlessui/react";
 import { SunIcon, MoonIcon } from "@heroicons/react/20/solid";
 interface Props {
-  updateTheme: any;
+  updateTheme: Function;
   checked: boolean;
 }
 export default function ThemeToggle({ updateTheme, checked }: Props) {

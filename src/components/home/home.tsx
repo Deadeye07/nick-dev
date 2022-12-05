@@ -17,6 +17,7 @@ export default function Home() {
   return (
     <div className={`${enabled ? "dark" : ""} h-full`}>
       <div className="bg-white dark:bg-slate-800 dark:text-white h-full">
+        <div className=" max-w-7xl m-auto">
         <div className="w-full">
           <div className="ml-auto w-fit mr-6 pt-6">
             <ThemeToggle
@@ -25,19 +26,21 @@ export default function Home() {
             ></ThemeToggle>
           </div>
         </div>
-        <div className="flex">
+        <div className="flex flex-col md:flex-row h-full">
           <Side></Side>
-          <div className="w-3/4 ml-auto mr-4 px-2 py-6">
+          <div className="w-full md:w-3/4 ml-auto mr-4 px-2 py-6">
             <Tab.Group>
               <TabList></TabList>
               <Tab.Panels className="mt-2">
                 <Experience></Experience>
                 <Skills></Skills>
-               <SideProjects></SideProjects>
+                <SideProjects></SideProjects>
               </Tab.Panels>
             </Tab.Group>
           </div>
         </div>
+        </div>
+       
       </div>
     </div>
   );

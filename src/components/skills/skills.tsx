@@ -1,23 +1,24 @@
 import React from "react";
 import { Tab } from "@headlessui/react";
+import SkillsText from "./skills.json";
 export default function Skills() {
-  function classNames(...classes) {
-    return classes.filter(Boolean).join(" ");
-  }
+  const data = SkillsText;
   return (
-    <Tab.Panel
-      className={classNames(
-        "rounded-xl bg-white p-3",
-        "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
-      )}
-    >
+    <Tab.Panel className="rounded-xl bg-white dark:bg-slate-700 p-3">
       <ul>
-        <li className="relative rounded-md p-3 hover:bg-gray-100">
-          <h3 className="text-sm font-medium leading-5">Title 2</h3>
-
-          <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-500">
-            Body 2
-          </ul>
+        <li className="relative rounded-md p-3">
+          {data.map(({ id, title, items }) => (
+            <div className="my-6" key={id}>
+              <div className="text-xl mb-2 font-bold">{title}</div>
+              <div className="border-2 rounded-xl border-purple-700 font-bold flex flex-row text-center flex-wrap justify-center">
+                {items.map((text) => (
+                  <div key={text} className="w-1/4 my-2">
+                    <div className="bg-slate-600 w-fit m-auto rounded-xl p-3">{text}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </li>
       </ul>
     </Tab.Panel>

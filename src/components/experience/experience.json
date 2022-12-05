@@ -1,0 +1,17 @@
+[
+    {
+        "id":"centerboard",
+        "title":"Open Marketplace for Freight Shipping",
+        "description":"Web-based, consumer-facing, open marketplace for freight shipping consisting of multiple applications and private component libraries."
+    },
+    {
+        "id":"commsoft",
+        "title":"Telecommunications CRM",
+        "description":"Web-based telecommunications CRM, managing customers and their accounts. along with a technician portal for on-site maintenance work with offline capabilities."
+    },
+    {
+        "id":"kodriver",
+        "title":"Mobile Delivery Application",
+        "description":"Android application for delivery drivers, allowing for the digitizing of processes traditionally requiring large amount of paperwork - including order acceptance, creation, accident reporting, bar code scanning, and delivery route mapping."
+    }
+]
