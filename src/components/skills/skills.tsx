@@ -5,8 +5,8 @@ export default function Skills() {
   const data = SkillsText;
   return (
     <Tab.Panel className="rounded-xl bg-white dark:bg-slate-700 ">
-      <ul>
-        <li className="relative rounded-md pt-3 px-3">
+    
+        <div className="relative rounded-md py-3 px-3">
           {data.map(({ id, title, items }) => (
             <div className="mb-6" key={id}>
               <div className="text-lg font-bold leading-5 mb-2">{title}</div>
@@ -19,8 +19,7 @@ export default function Skills() {
               </div>
             </div>
           ))}
-        </li>
-      </ul>
+        </div>
     </Tab.Panel>
   );
 }
