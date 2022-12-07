@@ -7,7 +7,6 @@ interface Props {
 }
 export default function ThemeToggle({ updateTheme, checked }: Props) {
   return (
-    <div>
       <Switch
         checked={checked}
         onChange={(event) => updateTheme(event)}
@@ -29,6 +28,5 @@ export default function ThemeToggle({ updateTheme, checked }: Props) {
           )}
         </span>
       </Switch>
-    </div>
   );
 }
