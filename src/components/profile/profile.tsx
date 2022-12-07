@@ -7,7 +7,7 @@ export default function Side() {
       <UserIcon></UserIcon>
       <div>
         845-325-5779 <br></br>nhranitz@gmail.com <br></br>Highland, NY<br></br>
-        <br></br> Education BA Economics <br></br><span className="text-xs">SUNY New Paltz, 2008 - 2013</span><br></br>
+        <br></br> BA Economics <br></br><span className="text-xs">SUNY New Paltz, 2008 - 2013</span><br></br>
         <br></br> MS Computer Science <br></br> <span className="text-xs">SUNY New Paltz, 2014 - 2016</span>
       </div><br></br>
       <a href="https://github.com/Deadeye07" target="_blank" rel="noreferrer">GitHub</a><br></br>

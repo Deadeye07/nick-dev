@@ -31,7 +31,7 @@ export default function SideProjects() {
                         />
                       </Disclosure.Button>
                       <Disclosure.Panel className="px-4 pt-4 pb-2 text-md bg-white dark:bg-slate-700">
-                      <iframe width="100%" height="570" src="https://www.youtube.com/embed/LNSURqggNGQ" title="Snapshot.org Progress Plugin Video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                      <iframe className="md:h-[570px]" width="100%" height="300" src="https://www.youtube.com/embed/LNSURqggNGQ" title="Snapshot.org Progress Plugin Video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
                       </Disclosure.Panel>
                     </>
