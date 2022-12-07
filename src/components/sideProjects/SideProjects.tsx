@@ -15,7 +15,7 @@ export default function SideProjects() {
         after voting on proposals was completed.
       </div>
       <div className="">
-      <ul className="list-disc w-1/2 ml-8 mt-4 mb-4">
+      <ul className="list-disc w-3/4 ml-8 mt-4 mb-4">
         <li>Designed and implemented responsive UI that blended with existing application.</li>
         <li>Utilized Web3 Ethereum Wallet Signature for HTTP Request authentication within AWS HTTP Gateway Authorizer Lambda.</li>
         </ul>

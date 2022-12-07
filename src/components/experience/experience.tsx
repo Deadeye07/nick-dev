@@ -9,7 +9,7 @@ export default function Experience() {
 
   return (
     <Tab.Panel
-      className="rounded-xl bg-white dark:bg-slate-700 p-3">
+      className="rounded-xl bg-white dark:bg-slate-700">
       <ul>
         <li className="relative rounded-md p-3">
           <h3 className="mb-4 text-lg font-bold leading-5">
@@ -17,7 +17,7 @@ export default function Experience() {
           </h3>
           <div>
             <div className="mb-8">{KogentText.text}</div>
-            {data.map(({ id, title, description }) => (
+            {data.map(({ id, title, description, bullets }) => (
               <div key={id} className="mb-2 mt-4">
                 <Disclosure defaultOpen>
                   {({ open }) => (
@@ -32,6 +32,13 @@ export default function Experience() {
                       </Disclosure.Button>
                       <Disclosure.Panel className="px-4 pt-4 pb-2 text-md ">
                         {description}
+                        <ul className="list-disc ml-8 mt-2">
+                          {bullets.map((text) => (
+                            <li className="mt-1">
+                              {text}
+                            </li>
+                        ))}
+                        </ul>
                       </Disclosure.Panel>
                     </>
                   )}
