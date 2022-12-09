@@ -7,7 +7,6 @@ import TabList from "../tabList/TabList";
 import Experience from "../experience/experience";
 import Skills from "../skills/skills";
 import SideProjects from "../sideProjects/SideProjects";
-
 export default function Home({ enabled, setEnabled }) {
   return (
     <div className="bg-white dark:bg-slate-800 py-4">
