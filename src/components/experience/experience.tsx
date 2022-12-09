@@ -3,13 +3,12 @@ import { Tab, Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/20/solid";
 import ExperienceText from "./experience.json";
 import KogentText from "./kogentDescription.json";
-
+import TechStack from "../techStack/techStack";
 export default function Experience() {
   const data = ExperienceText;
 
   return (
-    <Tab.Panel
-      className="rounded-xl bg-white dark:bg-slate-700">
+    <Tab.Panel className="rounded-xl bg-white dark:bg-slate-700">
       <ul>
         <li className="relative rounded-md p-3">
           <h3 className="mb-4 text-lg font-bold leading-5">
@@ -17,7 +16,7 @@ export default function Experience() {
           </h3>
           <div>
             <div className="mb-8">{KogentText.text}</div>
-            {data.map(({ id, title, description, bullets }) => (
+            {data.map(({ id, title, description, bullets }, index) => (
               <div key={id} className="mb-2 mt-4">
                 <Disclosure defaultOpen>
                   {({ open }) => (
@@ -34,11 +33,10 @@ export default function Experience() {
                         {description}
                         <ul className="list-disc ml-8 mt-2">
                           {bullets.map((text) => (
-                            <li className="mt-1">
-                              {text}
-                            </li>
-                        ))}
+                            <li className="mt-1">{text}</li>
+                          ))}
                         </ul>
+                        {index === 0 && <TechStack></TechStack>}
                       </Disclosure.Panel>
                     </>
                   )}

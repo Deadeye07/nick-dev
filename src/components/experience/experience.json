@@ -1,32 +1,33 @@
 [
-    {
-        "id":"centerboard",
-        "title":"Open Marketplace for Freight Shipping",
-        "description":"Web-based, consumer-facing, open marketplace for freight shipping consisting of multiple applications and private component libraries.",
-        "bullets":[
-            "Led a team of 8 engineers",
-            "Worked with product owner, project managers, UX, dev-ops, and QA teams through entire software development cycle, and also to create and improve those development cycle processes.",
-            "Conducted interviews for front-end developer candidates.",
-            "Extensive mentoring of junior developers"
-        ]
-    },
-    {
-        "id":"commsoft",
-        "title":"Telecommunications CRM",
-        "description":"Web-based telecommunications CRM, managing customers and their accounts. along with a technician portal for on-site maintenance work with offline capabilities.",
-        "bullets":[
-            "From project kickoff to completion, architected, designed, and implemented and managed front-end and helped to develop REST APIs.",
-            "Designed and implemented an offline HTTP Request manager that allowed for the application to be used without internet connectivity and then once connected re-sync data.",
-            "Trained clients’ developers in Sencha EXT JS, PHP, and GIT, through presentations, documentation, and paired programming."
-        ]
-    },
-    {
-        "id":"kodriver",
-        "title":"Mobile Delivery Application",
-        "description":"Android application for delivery drivers, allowing for the digitizing of processes traditionally requiring large amount of paperwork - including order acceptance, creation, accident reporting, bar code scanning, and delivery route mapping.",
-        "bullets":[
-            "Helped to gather requirements, architect, design, and implement all aspects of the front-end and PHP APIs.",
-            "Demo’d and worked with clients and users to tailor application to their needs."
-        ]
-    }
+  {
+    "id": "centerboard",
+    "title": "Open Marketplace for Freight Shipping (Dec. 2019 - Nov. 2022)",
+    "description": "Web-based, consumer-facing, open marketplace for freight shipping consisting of multiple applications and private component libraries.",
+    "bullets": [
+      "Led a team of 8 engineers",
+      "Drafted software requirements and managed design and testing processes.",
+      "Defined and continuously improved software development best practices.",
+      "Spearheaded transition to use of NGRX, TailwindCSS, Material UI, Prettier, and SwaggerUI libraries which led to substantially more robust, cleaner, and developer friendly codebase.",
+      "Extensive mentoring of junior developers through paired programming and pull-requests."
+    ]
+  },
+  {
+    "id": "commsoft",
+    "title": "Telecommunications CRM (2016-2020)",
+    "description": "Web-based telecommunications CRM, managing customers and their accounts. along with a technician portal for on-site maintenance work with offline capabilities.",
+    "bullets": [
+      "From project kickoff to completion, architected, designed, and implemented and managed front-end and helped to develop REST APIs.",
+      "Designed and implemented an offline HTTP Request manager that allowed for the application to be used without internet connectivity and then once connected re-sync data.",
+      "Trained clients’ developers in Sencha EXT JS, PHP, and GIT, through presentations, documentation, and paired programming."
+    ]
+  },
+  {
+    "id": "kodriver",
+    "title": "Mobile Delivery Application (2019)",
+    "description": "Android application for delivery drivers, allowing for the digitizing of processes traditionally requiring large amount of paperwork - including order acceptance, creation, accident reporting, bar code scanning, and delivery route mapping.",
+    "bullets": [
+      "Helped to gather requirements, architect, design, and implement all aspects of the front-end and PHP APIs.",
+      "Demo’d and worked with clients and users to tailor application to their needs."
+    ]
+  }
 ]
