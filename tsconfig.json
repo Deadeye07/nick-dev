@@ -105,6 +105,7 @@
   },
   "include": [
     "src",
-    "src/custom.d.ts"
+    "src/custom.d.ts",
+    "src/index.d.ts"
   ]
 }

@@ -10,15 +10,12 @@ import SideProjects from "../sideProjects/SideProjects";
 export default function Home({ enabled, setEnabled }) {
   return (
     <div className="bg-white dark:bg-slate-800 py-4">
-      <div className=" dark:text-white">
-        <div className=" max-w-7xl m-auto">
-          <div className="w-full">
-            <div className="ml-auto w-fit mr-6">
+        <div className=" dark:text-white max-w-7xl m-auto">
+          <div className="flex justify-end mb-2">
               <ThemeToggle
                 updateTheme={setEnabled}
                 checked={enabled}
               ></ThemeToggle>
-            </div>
           </div>
           <div className="flex flex-col md:flex-row">
             <Side></Side>
@@ -34,7 +31,6 @@ export default function Home({ enabled, setEnabled }) {
             </div>
           </div>
         </div>
-      </div>
     </div>
   );
 }
