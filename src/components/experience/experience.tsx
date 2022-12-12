@@ -33,7 +33,9 @@ export default function Experience() {
                         {description}
                         <ul className="list-disc ml-8 mt-2">
                           {bullets.map((text) => (
-                            <li className="mt-1">{text}</li>
+                            <li key={text} className="mt-1">
+                              {text}
+                            </li>
                           ))}
                         </ul>
                         {index === 0 && <TechStack></TechStack>}
