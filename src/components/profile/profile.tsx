@@ -10,7 +10,7 @@ import 'react-tooltip/dist/react-tooltip.css'
 export default function Side() {
   return (
     <div className="rounded-xl bg-slate-200 dark:bg-slate-700 p-3 h-fit mb-4 mr-4 ml-4">
-      <img className="rounded-xl" src={ProfilePic} height='200' width='200' />
+      <img className="rounded-xl" src={ProfilePic} height='200' width='200' alt="profile-pic" />
       <div>
         <br></br>nhranitz@gmail.com <br></br>Highland, NY<br></br>
         <br></br> BA Economics <br></br>
