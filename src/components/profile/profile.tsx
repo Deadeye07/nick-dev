@@ -1,15 +1,16 @@
 import React from "react";
-import { UserIcon, NewspaperIcon } from "@heroicons/react/20/solid";
+import { NewspaperIcon } from "@heroicons/react/20/solid";
 import { ReactComponent as GithubIcon } from "./icons/github.svg";
 import { ReactComponent as LinkedIcon } from "./icons/linkedin.svg";
-import { ReactComponent as ResumeIcon } from "./icons/resume.svg";
+import ProfilePic from "./icons/profilepic.jpeg";
+
 import { Tooltip } from "react-tooltip";
 import 'react-tooltip/dist/react-tooltip.css'
 
 export default function Side() {
   return (
     <div className="rounded-xl bg-slate-200 dark:bg-slate-700 p-3 h-fit mb-4 mr-4 ml-4">
-      <UserIcon></UserIcon>
+      <img className="rounded-xl" src={ProfilePic} height='200' width='200' />
       <div>
         <br></br>nhranitz@gmail.com <br></br>Highland, NY<br></br>
         <br></br> BA Economics <br></br>
