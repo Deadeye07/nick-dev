@@ -47,7 +47,7 @@ export default function Side() {
         </a>
         <a
           id="resume"
-          href="https://nick-resume-bucket.s3.amazonaws.com/2022HranitzResume.pdf"
+          href="https://nick-resume-bucket.s3.amazonaws.com/NickHranitzResume.pdf"
           target="_blank"
           rel="noreferrer"
         >
