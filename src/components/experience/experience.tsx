@@ -16,9 +16,9 @@ export default function Experience() {
           </h3>
           <div>
             <div className="mb-8">{KogentText.text}</div>
-            {data.map(({ id, title, description, bullets }, index) => (
+            {data.map(({ id, title, description, bullets, techStack }, index) => (
               <div key={id} className="mb-2 mt-4">
-                <Disclosure defaultOpen>
+                <Disclosure defaultOpen={index === 0}>
                   {({ open }) => (
                     <>
                       <Disclosure.Button className="flex w-full justify-between rounded-lg bg-gray-100 dark:bg-gray-600 px-4 py-2 text-left text-md font-medium  hover:bg-purple-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
@@ -38,7 +38,7 @@ export default function Experience() {
                             </li>
                           ))}
                         </ul>
-                        {index === 0 && <TechStack></TechStack>}
+                        {techStack.length > 0 && <TechStack options={techStack} ></TechStack>}
                       </Disclosure.Panel>
                     </>
                   )}

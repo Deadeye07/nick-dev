@@ -1,7 +1,44 @@
 [
   {
+    "id": "mmi",
+    "title": "Lead Engineer, Order Management System - Dec. 2022 - Present",
+    "description": "Web-based application for managing custom built warehouse shelving orders — from quoting to production, and freight shipping.",
+    "bullets": [
+      "Managing team of 6 engineers in developing user story tracks",
+      "Created cohesive design system and interactive UI mockups using Figma",
+      "Developed and coordinated creation of detailed functional specifications documentation",
+      "Architected application's front and backend systems"
+    ],
+    "techStack":[
+      {
+        "name": "Angular 15",
+        "description": "+ TailwindCSS, Material, Prettier",
+        "href": "##",
+        "icon": "angular"
+      },
+      {
+        "name": "NestJs",
+        "description": "",
+        "href": "##",
+        "icon": "nest"
+      },
+      {
+        "name": "AWS",
+        "description": "Cognito, S3, Code Deploy, Amplify, SES",
+        "href": "##",
+        "icon": "aws"
+      },
+      {
+        "name": "MariaDB",
+        "description": "",
+        "href": "##",
+        "icon": "maria"
+      }
+    ]
+  },
+  {
     "id": "centerboard",
-    "title": "Open Marketplace for Freight Shipping (Dec. 2019 - Nov. 2022)",
+    "title": "Front-End Team Lead, Open Freight Marketplace (Remote) — Jan. 2020 - Nov. 2022",
     "description": "Web-based, consumer-facing, open marketplace for freight shipping consisting of multiple applications and private component libraries.",
     "bullets": [
       "Led a team of 8 engineers",
@@ -9,25 +46,57 @@
       "Defined and continuously improved software development best practices.",
       "Spearheaded transition to use of NGRX, TailwindCSS, Material UI, Prettier, and SwaggerUI libraries which led to substantially more robust, cleaner, and developer friendly codebase.",
       "Extensive mentoring of junior developers through paired programming and pull-requests."
+    ],
+    "techStack":[
+      {
+        "name": "Angular 8-14",
+        "description": "+ NGRX, TailwindCSS, Material, Prettier",
+        "href": "##",
+        "icon": "angular"
+      },
+      {
+        "name": "ExpressJs",
+        "description": "+ Socket.io",
+        "href": "##",
+        "icon": "express"
+      },
+      {
+        "name": "NestJs",
+        "description": "",
+        "href": "##",
+        "icon": "nest"
+      },
+      {
+        "name": "MongoDB",
+        "description": "",
+        "href": "##",
+        "icon": "mongo"
+      }
     ]
   },
   {
     "id": "commsoft",
-    "title": "Telecommunications CRM (2016-2020)",
+    "title": "Engineer, Telecommunications CRM (2016-2020)",
     "description": "Web-based telecommunications CRM, managing customers and their accounts. along with a technician portal for on-site maintenance work with offline capabilities.",
     "bullets": [
       "From project kickoff to completion, architected, designed, and implemented and managed front-end and helped to develop REST APIs.",
       "Designed and implemented an offline HTTP Request manager that allowed for the application to be used without internet connectivity and then once connected re-sync data.",
       "Trained clients’ developers in Sencha EXT JS, PHP, and GIT, through presentations, documentation, and paired programming."
+    ],
+    "techStack":[
+      
     ]
   },
   {
     "id": "kodriver",
-    "title": "Mobile Delivery Application (2019)",
+    "title": "Engineer, Mobile Delivery Application (2019)",
     "description": "Android application for delivery drivers, allowing for the digitizing of processes traditionally requiring large amount of paperwork - including order acceptance, creation, accident reporting, bar code scanning, and delivery route mapping.",
     "bullets": [
       "Helped to gather requirements, architect, design, and implement all aspects of the front-end and PHP APIs.",
       "Demo’d and worked with clients and users to tailor application to their needs."
+    ],
+    "techStack":[
+      
     ]
   }
 ]
