@@ -3,34 +3,7 @@ import { ChevronUpIcon } from "@heroicons/react/20/solid";
 import { Fragment } from "react";
 import React from "react";
 
-const solutions = [
-  {
-    name: "Angular 8-14",
-    description: "+ NGRX, TailwindCSS, Material, Prettier",
-    href: "##",
-    icon:'angular'
-  },
-  {
-    name: "ExpressJs",
-    description: "+ Socket.io",
-    href: "##",
-    icon: 'express',
-  },
-  {
-    name: "NestJs",
-    description: "",
-    href: "##",
-    icon: 'nest',
-  },
-  {
-    name: "MongoDB",
-    description: "",
-    href: "##",
-    icon: 'mongo',
-  }
-];
-
-export default function TechStack() {
+export default function TechStack(props) {
   return (
     <div className="w-full px-4 mt-4">
       <Popover className="relative">
@@ -60,7 +33,7 @@ export default function TechStack() {
               <Popover.Panel className="absolute -top-[380px] left-[140px] z-10 mt-3 w-80  -translate-x-1/2 transform px-4">
                 <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                   <div className="relative grid gap-8 bg-white dark:bg-slate-600 p-7">
-                    {solutions.map((item) => (
+                    {props.options.map((item) => (
                       <div
                         key={item.name}
                         className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
