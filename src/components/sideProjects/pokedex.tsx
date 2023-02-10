@@ -17,8 +17,9 @@ export default function Pokedex() {
           <Disclosure.Panel className="px-4 pt-4 pb-2 text-md ">
             <iframe
               title="Figma"
-              width="800"
-              height="500"
+              width="100%"
+              height="100%"
+              style={{minHeight:300}}
               src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FyHYwTeoHeDKF7R1sQRKMl1%2FDev-Site%3Ft%3DO76aY9tB1In3cPqT-1"
             ></iframe>
           </Disclosure.Panel>
