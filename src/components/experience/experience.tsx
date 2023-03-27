@@ -12,7 +12,7 @@ export default function Experience() {
       <ul>
         <li className="relative rounded-md p-3">
           <h3 className="mb-4 text-lg font-bold leading-5">
-            Senior Engineer, Kogent Systems — 2015-Present
+            Senior Engineer, Kogent Systems — 2015 - Mar. 2023
           </h3>
           <div>
             <div className="mb-8">{KogentText.text}</div>
