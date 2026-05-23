@@ -1,11 +1,11 @@
-import { Tab } from "@headlessui/react";
+import { Tab, TabList as HUITabList } from "@headlessui/react";
 import React from "react";
 export default function TabList() {
   function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(" ");
   }
   return (
-    <Tab.List className="flex space-x-1 rounded-xl bg-purple-500/20 p-1">
+    <HUITabList className="flex space-x-1 rounded-xl bg-purple-500/20 p-1">
       <Tab
         className={({ selected }) =>
           classNames(
@@ -45,6 +45,6 @@ export default function TabList() {
       >
         Side Projects
       </Tab>
-    </Tab.List>
+    </HUITabList>
   );
 }

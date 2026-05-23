@@ -1,4 +1,4 @@
-import { Tab } from "@headlessui/react";
+import { TabGroup, TabPanels } from "@headlessui/react";
 import React from "react";
 import "./home.css";
 import ThemeToggle from "../themeToggle/ThemeToggle";
@@ -20,14 +20,14 @@ export default function Home({ enabled, setEnabled }) {
           <div className="flex flex-col md:flex-row">
             <Side></Side>
             <div className="w-full md:w-3/4 mr-4 px-2">
-              <Tab.Group>
+              <TabGroup>
                 <TabList></TabList>
-                <Tab.Panels className="mt-2">
+                <TabPanels className="mt-2">
                   <Experience></Experience>
                   <Skills></Skills>
                   <SideProjects></SideProjects>
-                </Tab.Panels>
-              </Tab.Group>
+                </TabPanels>
+              </TabGroup>
             </div>
           </div>
         </div>

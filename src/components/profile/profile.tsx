@@ -31,6 +31,7 @@ export default function Side() {
       <div className="flex justify-between mx-4">
         <a
           id="github"
+          data-tooltip-id="github-tip"
           href="https://github.com/Deadeye07"
           target="_blank"
           rel="noreferrer"
@@ -39,6 +40,7 @@ export default function Side() {
         </a>
         <a
           id="linkedin"
+          data-tooltip-id="linkedin-tip"
           href="https://www.linkedin.com/in/nicholas-hranitz/"
           target="_blank"
           rel="noreferrer"
@@ -47,6 +49,7 @@ export default function Side() {
         </a>
         <a
           id="resume"
+          data-tooltip-id="resume-tip"
           href="https://nick-resume-bucket.s3.amazonaws.com/NickHranitzResume.pdf"
           target="_blank"
           rel="noreferrer"
@@ -54,9 +57,9 @@ export default function Side() {
           <NewspaperIcon className="h-8 w-8 fill-slate-600 dark:fill-white"></NewspaperIcon>
         </a>
       </div>
-      <Tooltip anchorId="github" content="Github" />
-      <Tooltip anchorId="linkedin" content="LinkedIn" />
-      <Tooltip anchorId="resume" content="Resume" />
+      <Tooltip id="github-tip" content="Github" />
+      <Tooltip id="linkedin-tip" content="LinkedIn" />
+      <Tooltip id="resume-tip" content="Resume" />
     </div>
   );
 }

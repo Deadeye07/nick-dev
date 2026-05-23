@@ -1,10 +1,10 @@
 import React from "react";
-import { Tab } from "@headlessui/react";
+import { TabPanel } from "@headlessui/react";
 import SkillsText from "./skills.json";
 export default function Skills() {
   const data = SkillsText;
   return (
-    <Tab.Panel className="rounded-xl bg-white dark:bg-slate-700 ">
+    <TabPanel className="rounded-xl bg-white dark:bg-slate-700 ">
     
         <div className="relative rounded-md py-3 px-3">
           {data.map(({ id, title, items }) => (
@@ -20,6 +20,6 @@ export default function Skills() {
             </div>
           ))}
         </div>
-    </Tab.Panel>
+    </TabPanel>
   );
 }
