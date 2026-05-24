@@ -30,19 +30,6 @@ export default function TabList() {
           )
         }
       >
-        Skills
-      </Tab>
-      <Tab
-        className={({ selected }) =>
-          classNames(
-            "w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-purple-700",
-            "ring-white ring-opacity-60 ring-offset-2 ring-offset-purple-400 focus:outline-none focus:ring-2",
-            selected
-              ? "bg-white shadow"
-              : "dark:text-purple-100 text-purple-400 hover:bg-white/[0.12]"
-          )
-        }
-      >
         Side Projects
       </Tab>
     </HUITabList>

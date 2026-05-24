@@ -1,48 +1,45 @@
-import { Popover, PopoverButton, PopoverPanel } from "@headlessui/react";
-import { ChevronUpIcon } from "@heroicons/react/20/solid";
 import React from "react";
 
-// Import all tech stack icon PNGs eagerly; Vite resolves these at build time
 const iconModules = import.meta.glob<{ default: string }>('./*.png', { eager: true });
 
-export default function TechStack(props) {
+interface TechItem {
+  name: string;
+  description: string;
+  href: string;
+  icon: string;
+}
+
+interface Props {
+  options: TechItem[];
+}
+
+export default function TechStack({ options }: Props) {
   return (
-    <div className="w-full px-4 mt-4">
-      <Popover className="relative">
-        <PopoverButton
-          className="group inline-flex items-center rounded-md bg-purple-700 dark:bg-purple-800 px-3 py-2 text-base font-medium text-white hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
+    <div className="flex flex-wrap gap-2 mt-4">
+      {options.map((item) => (
+        <div
+          key={item.name}
+          className="flex items-center gap-2 bg-slate-100 dark:bg-slate-700/60 border border-slate-200 dark:border-slate-600/40 rounded-lg px-2.5 py-1.5"
         >
-          <span>Tech Stack</span>
-          <ChevronUpIcon
-            className="ml-2 h-5 w-5 text-white transition duration-150 ease-in-out group-hover:text-opacity-80"
-            aria-hidden="true"
+          <img
+            src={iconModules[`./${item.icon}.png`]?.default}
+            alt={item.icon}
+            width={18}
+            height={18}
+            className="shrink-0 rounded-sm"
           />
-        </PopoverButton>
-        <PopoverPanel className="absolute -top-[380px] left-[140px] z-10 mt-3 w-80 -translate-x-1/2 transform px-4">
-          <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-            <div className="relative grid gap-8 bg-white dark:bg-slate-600 p-7">
-              {props.options.map((item) => (
-                <div
-                  key={item.name}
-                  className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
-                >
-                  <img height='60' width='60' alt={item.icon} src={iconModules[`./${item.icon}.png`]?.default}></img>
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center text-white">
-                  </div>
-                  <div className="ml-4">
-                    <p className="text-sm font-medium text-gray-900 dark:text-white">
-                      {item.name}
-                    </p>
-                    <p className="text-sm text-gray-500 dark:text-white">
-                      {item.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
+          <div className="flex items-baseline gap-1.5">
+            <span className="text-xs font-medium text-slate-700 dark:text-slate-200 whitespace-nowrap">
+              {item.name}
+            </span>
+            {item.description && (
+              <span className="text-xs text-slate-400 dark:text-slate-400 whitespace-nowrap">
+                {item.description}
+              </span>
+            )}
           </div>
-        </PopoverPanel>
-      </Popover>
+        </div>
+      ))}
     </div>
   );
 }

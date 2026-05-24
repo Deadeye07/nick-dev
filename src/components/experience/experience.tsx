@@ -11,11 +11,32 @@ export default function Experience() {
     <TabPanel className="rounded-xl bg-white dark:bg-slate-700">
       <ul>
         <li className="relative rounded-md p-3">
-          <h3 className="mb-4 text-lg font-bold leading-5">
-            Senior Engineer, Kogent Systems — 2015 - Mar. 2023
-          </h3>
+          {/* Employer header */}
+          <div className="mb-4 flex items-start justify-between gap-3">
+            <div>
+              <div className="flex items-center gap-2 flex-wrap">
+                <h3 className="text-lg font-bold leading-5">
+                  Kogent Systems
+                </h3>
+                <span className="text-[11px] font-medium px-2 py-0.5 rounded-md bg-purple-500/10 text-purple-400">
+                  Consulting firm
+                </span>
+              </div>
+              <p className="text-sm text-slate-500 dark:text-slate-400 mt-0.5 font-mono">
+                Senior Engineer · 2015 — Mar 2023
+              </p>
+            </div>
+            <span className="shrink-0 text-xs text-slate-400 dark:text-slate-500 mt-1">
+              {data.length} engagements
+            </span>
+          </div>
           <div>
-            <div className="mb-8">{KogentText.text}</div>
+            <div className="mb-6 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+              {KogentText.text}
+            </div>
+            <p className="text-[10px] uppercase tracking-widest text-slate-400 dark:text-slate-500 font-medium mb-3">
+              Client engagements
+            </p>
             {data.map(({ id, title, description, bullets, techStack }, index) => (
               <div key={id} className="mb-2 mt-4">
                 <Disclosure defaultOpen={index === 0}>
