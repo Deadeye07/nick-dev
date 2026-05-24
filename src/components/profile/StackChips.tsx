@@ -27,6 +27,7 @@ const groups = [
       { name: "Git",    color: "bg-orange-600/10 text-red-400" },
       { name: "Figma",  color: "bg-purple-500/10 text-purple-400" },
       { name: "Postman",  color: "bg-purple-500/10 text-orange-400" },
+      { name: "Claude Code",  color: "bg-purple-500/10 text-orange-400" },
     ],
   },
 ];
