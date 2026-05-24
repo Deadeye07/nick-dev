@@ -1,0 +1,119 @@
+[
+  {
+    "id": "railroad19",
+    "company": "Railroad 19 LLC",
+    "role": "Senior Frontend Engineer",
+    "badge": "Consulting firm",
+    "startDate": "2023",
+    "endDate": "Present",
+    "description": "Senior frontend engineer and UX design lead at a software consulting firm, working across client engagements and internal product proposals in the media and broadcasting industry.",
+    "engagements": [
+      {
+        "id": "nbc-adsales",
+        "title": "Senior Frontend Engineer, Global Media & Entertainment Company — 2023 — Present",
+        "description": "Suite of web-based applications supporting the ad sales division of one of the world's largest entertainment and broadcasting companies.",
+        "bullets": [
+          "Built an invoice creation and management application for the billing department, streamlining the end-to-end invoicing workflow.",
+          "Developed an audience impression delivery tool enabling ad sales teams to model and forecast how many ad impressions NBC can deliver across different audience segments.",
+          "Currently building an ad sales order management platform to centralize and manage the full lifecycle of advertising orders."
+        ],
+        "techStack": [
+          { "name": "Angular 17-20", "description": "+ PrimeNG, PrimeFlex, Tailwind", "href": "##", "icon": "angular" }
+        ]
+      },
+      {
+        "id": "broadcast-crm",
+        "title": "UX Design Lead, Broadcast Control Room Management — Internal Proposal — 2025",
+        "description": "Designed a web-based application for managing digital control room boards used in live broadcasting operations. The proposal was adopted and evolved into a multi-year client engagement with a major U.S. broadcast television network.",
+        "bullets": [
+          "Led UX design and prototyping for an internal proposal targeting broadcast operations teams.",
+          "Produced high-fidelity interactive Figma mockups covering real-time control room board management, scheduling, and status tracking.",
+          "Proposal was greenlit and became the foundation for a long-term engagement with one of the largest broadcast television networks in the United States."
+        ],
+        "techStack": [
+          { "name": "Figma", "description": "High-fidelity prototyping", "href": "##", "icon": "figma" }
+        ]
+      },
+      {
+        "id": "network-cms",
+        "title": "UX Design Lead, Network Asset Management CMS — Internal Proposal — 2024",
+        "description": "Designed a content management system enabling sister networks within a large media conglomerate to share and manage creative assets across properties.",
+        "bullets": [
+          "Architected UX flows and produced detailed Figma mockups for a cross-network digital asset management platform.",
+          "Designed features for asset tagging, access controls, and cross-property sharing workflows tailored to broadcast media teams.",
+          "Delivered internal proposal documentation including annotated wireframes and an interactive prototype."
+        ],
+        "techStack": [
+          { "name": "Figma", "description": "High-fidelity prototyping", "href": "##", "icon": "figma" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kogent",
+    "company": "Kogent Systems",
+    "role": "Senior Engineer",
+    "badge": "Consulting firm",
+    "startDate": "2015",
+    "endDate": "2023",
+    "description": "Active in all aspects of the software development cycle, and more, including - project management and planning, and interviewing developer candidates. As a consultant, I have been involved in a variety of projects and teams. Below are some of the more long-term projects I have been a core member of while at Kogent Systems.",
+    "engagements": [
+      {
+        "id": "mmi",
+        "title": "Lead Engineer, Order Management System - Dec. 2022 - Mar. 2023",
+        "description": "Web-based application for managing custom built warehouse shelving orders — from quoting to production, and freight shipping.",
+        "bullets": [
+          "Managing team of 6 engineers in developing user story tracks",
+          "Created cohesive design system and interactive UI mockups using Figma",
+          "Developed and coordinated creation of detailed functional specifications documentation",
+          "Architected application's front and backend systems"
+        ],
+        "techStack": [
+          { "name": "Angular 15", "description": "+ TailwindCSS, Material, Prettier", "href": "##", "icon": "angular" },
+          { "name": "NestJs",     "description": "",                                  "href": "##", "icon": "nest"    },
+          { "name": "AWS",        "description": "Cognito, S3, Code Deploy, Amplify, SES", "href": "##", "icon": "aws" },
+          { "name": "MariaDB",    "description": "",                                  "href": "##", "icon": "maria"   }
+        ]
+      },
+      {
+        "id": "centerboard",
+        "title": "Front-End Team Lead, Open Freight Marketplace (Remote) — Jan. 2020 - Nov. 2022",
+        "description": "Web-based, consumer-facing, open marketplace for freight shipping consisting of multiple applications and private component libraries.",
+        "bullets": [
+          "Led a team of 8 engineers",
+          "Drafted software requirements and managed design and testing processes.",
+          "Defined and continuously improved software development best practices.",
+          "Spearheaded transition to use of NGRX, TailwindCSS, Material UI, Prettier, and SwaggerUI libraries which led to substantially more robust, cleaner, and developer friendly codebase.",
+          "Extensive mentoring of junior developers through paired programming and pull-requests."
+        ],
+        "techStack": [
+          { "name": "Angular 8-14", "description": "+ NGRX, TailwindCSS, Material, Prettier", "href": "##", "icon": "angular" },
+          { "name": "ExpressJs",    "description": "+ Socket.io",                              "href": "##", "icon": "express" },
+          { "name": "NestJs",       "description": "",                                         "href": "##", "icon": "nest"    },
+          { "name": "MongoDB",      "description": "",                                         "href": "##", "icon": "mongo"   }
+        ]
+      },
+      {
+        "id": "commsoft",
+        "title": "Engineer, Telecommunications CRM (2016-2020)",
+        "description": "Web-based telecommunications CRM, managing customers and their accounts, along with a technician portal for on-site maintenance work with offline capabilities.",
+        "bullets": [
+          "From project kickoff to completion, architected, designed, and implemented and managed front-end and helped to develop REST APIs.",
+          "Designed and implemented an offline HTTP Request manager that allowed for the application to be used without internet connectivity and then once connected re-sync data.",
+          "Trained clients' developers in Sencha EXT JS, PHP, and GIT, through presentations, documentation, and paired programming."
+        ],
+        "techStack": []
+      },
+      {
+        "id": "kodriver",
+        "title": "Engineer, Mobile Delivery Application (2019)",
+        "description": "Android application for delivery drivers, allowing for the digitizing of processes traditionally requiring large amount of paperwork - including order acceptance, creation, accident reporting, bar code scanning, and delivery route mapping.",
+        "bullets": [
+          "Helped to gather requirements, architect, design, and implement all aspects of the front-end and PHP APIs.",
+          "Demo'd and worked with clients and users to tailor application to their needs."
+        ],
+        "techStack": []
+      }
+    ]
+  }
+]
