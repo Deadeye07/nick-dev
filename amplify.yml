@@ -4,6 +4,7 @@ frontend:
     preBuild:
       commands:
         - node --version
+        - rm -f package-lock.json
         - npm install
     build:
       commands:
