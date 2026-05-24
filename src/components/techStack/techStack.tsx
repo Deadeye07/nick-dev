@@ -2,6 +2,9 @@ import { Popover, PopoverButton, PopoverPanel } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/20/solid";
 import React from "react";
 
+// Import all tech stack icon PNGs eagerly; Vite resolves these at build time
+const iconModules = import.meta.glob<{ default: string }>('./*.png', { eager: true });
+
 export default function TechStack(props) {
   return (
     <div className="w-full px-4 mt-4">
@@ -23,7 +26,7 @@ export default function TechStack(props) {
                   key={item.name}
                   className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
                 >
-                  <img height='60' width='60' alt={ item.icon} src={require(`./${item.icon}.png`)}></img>
+                  <img height='60' width='60' alt={item.icon} src={iconModules[`./${item.icon}.png`]?.default}></img>
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center text-white">
                   </div>
                   <div className="ml-4">

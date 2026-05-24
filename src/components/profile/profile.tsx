@@ -1,7 +1,8 @@
 import React from "react";
 import { NewspaperIcon } from "@heroicons/react/20/solid";
-import { ReactComponent as GithubIcon } from "./icons/github.svg";
-import { ReactComponent as LinkedIcon } from "./icons/linkedin.svg";
+import GithubIcon from "./icons/github.svg";
+import LinkedIcon from "./icons/linkedin.svg";
+import profilepic from "./profilepic.png";
 
 import { Tooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
@@ -12,7 +13,7 @@ export default function Side() {
       <div className="flex text-center justify-center items-center flex-col sm:flex-row md:block">
         <img
           className=" rounded-xl h-fit"
-          src={require(`./profilepic.png`)}
+          src={profilepic}
           height="200"
           width="200"
           alt="profile-pic"
